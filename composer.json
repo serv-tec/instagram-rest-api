@@ -1,0 +1,57 @@
+{
+    "name": "serv-tec\/instagram-rest-api",
+    "type": "library",
+    "minimum-stability": "stable",
+    "description": "A PHP wrapper for the Instagram REST and Search APIs",
+    "keywords": [
+        "Instagram",
+        "REST",
+        "API",
+        "PHP"
+    ],
+    "authors": [
+        {
+            "name": "Abyr Valg",
+            "email": "valga.github@abyrga.ru"
+        },
+        {
+            "name": "serv-tec",
+            "homepage": "https:\/\/github.com\/serv-tec",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "InstagramRestApi\\": "src\/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "InstagramRestApi\\CodeStyle\\": "cs\/",
+            "InstagramRestApi\\Tests\\": "tests\/"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "guzzlehttp\/guzzle": "^6.2",
+        "netresearch\/jsonmapper": "^1.1",
+        "psr\/log": "^1.0"
+    },
+    "require-dev": {
+        "monolog\/monolog": "^1.22",
+        "friendsofphp\/php-cs-fixer": "^2.3",
+        "phpunit\/phpunit": "^6.2"
+    },
+    "old": {
+        "owner": "valga",
+        "name": "instagram-rest-api"
+    },
+    "support": {
+        "issues": "https:\/\/github.com\/serv-tec\/Instagram-Rest-Api\/issues",
+        "wiki": "https:\/\/github.com\/serv-tec\/Instagram-Rest-Api\/wiki",
+        "source": "https:\/\/github.com\/serv-tec\/Instagram-Rest-Api"
+    },
+    "replace": {
+        "valga\/instagram-rest-api": "*"
+    }
+}
